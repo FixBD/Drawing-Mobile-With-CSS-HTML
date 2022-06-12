@@ -1,4 +1,4 @@
-# Drawing-Mobile-With-CSS-HTML-
+# Drawing Mobile With CSS and HTML
 CSS challenge to draw button mobile with some functionality using CSS, HTML and JavaScript.
 
 Preview results:
