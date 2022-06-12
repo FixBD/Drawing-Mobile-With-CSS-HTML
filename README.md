@@ -3,5 +3,5 @@ CSS challenge to draw button mobile with some functionality using CSS, HTML and 
 
 Preview results:
 
-<img src="/blob/FixBD/Img/preview-1.png">
-<img src="/blob/FixBD/Img/preview-2.png">
+<img src="/FixBD/Img/preview-1.png">
+<img src="/FixBD/Img/preview-2.png">
