@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mobile</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="mobile">
+    <div class="body">
+      <div class="display">
+        <div class="speaker"></div>
+        <div id="screen" class="screen">
+          <p id="getNumber"></p>
+        </div>
+        <div class="logo">Atik</div>
+      </div>
+
+      <div class="button">
+        <div class="main-key">
+          <div class="left">
+            <button onclick="get_screen('menu')">⚙️</button>
+            <button onclick="get_screen('call')">📞</button>
+          </div>
+          <div class="center">
+            <button onclick="get_screen('menu')">🎨</button>
+          </div>
+          <div class="right">
+            <button onclick="get_screen('contact')">📄</button>
+            <button onclick="get_screen('home')">⛔</button>
+          </div>
+        </div>
+        
+        <div class="number-key">
+          <button class="number" id="1">1</button>
+          <button class="number" id="2">2</button>
+          <button class="number" id="3">3</button>
+          <button class="number" id="4">4</button>
+          <button class="number" id="5">5</button>
+          <button class="number" id="6">6</button>
+          <button class="number" id="7">7</button>
+          <button class="number" id="8">8</button>
+          <button class="number" id="9">9</button>
+          <button class="number" id="*">*</button>
+          <button class="number" id="0">0</button>
+          <button class="number" id="#">#</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var number = document.getElementsByClassName("number");
+    for (var i = 0; i < number.length; i++) {
+      number[i].addEventListener("click", function () {
+        var output = getScreen();
+
+        output = output + this.id;
+        printScreen(output);
+
+        get_call("call");
+      });
+    }
+  </script>
+</body>
+</html>
